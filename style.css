@@ -38,10 +38,6 @@ h2 {
   color: #827BB7;
 }
 
-img {
-  width: 100px;
-}
-
 p {
   color: #383838;
   font-family: 'Source Serif Pro', serif;
@@ -72,6 +68,7 @@ a {
 }
 
 img.profile-pic-round {
+  width: 100px;
   justify-items: center;
   border-radius: 50%;
 }
