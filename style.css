@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500;700");
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
@@ -23,19 +24,22 @@
 }
 
 body {
+  background-image: radial-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0.2) 80%), url("images/code.jpg");
   background-color: #f1f1f1;
+  background-size: cover;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #827BB7;
+  color: #444444;
 }
 
 h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #827BB7;
+  color: #444444;
 }
 
 p {
@@ -45,15 +49,17 @@ p {
   font-weight: bold;
 }
 
-a {
+a.button {
   color: #fdfdfd;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
-  font-weight: bold;
   text-decoration: none;
+  font-size: 15px;
+  font-weight: lighter;
+  border-radius: 4px;
+  padding: 15px;
+  background-color: #4134bd;
 }
 
-#intro a:hover {
+a:hover.button {
   color: #fdfdfd;
   background-color: #140c61;
 }
@@ -68,16 +74,10 @@ a {
 }
 
 img.profile-pic-round {
+  border: rgb(39, 39, 39) solid;
   width: 100px;
   justify-items: center;
   border-radius: 50%;
-}
-
-#intro a {
-  font-size: 15px;
-  border-radius: 4px;
-  padding: 15px;
-  background-color: #4134bd;
 }
 
 #intro {
@@ -100,14 +100,14 @@ ul {
   overflow: hidden;
 }
 
+ul > li {
+  display: inline-block;
+}
+
 li {
   margin-left: 10px;
   margin-right: 10px;
   text-align: center;
-}
-
-ul > li {
-  display: inline-block;
 }
 
 .container {
